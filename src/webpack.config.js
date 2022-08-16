@@ -8,6 +8,7 @@ module.exports = (envVars) => {
       app: path.resolve(__dirname, "public/js/_app.js"),
     },
     mode: envVars.environment,
+    watch: envVars.environment === 'development',
     output: {
       path: path.resolve(__dirname, "public/js/"),
       filename: `[name].js`,

@@ -35,7 +35,7 @@ Also, you can run the project with `Makefile` ([Unbuntu](https://www.unixmen.com
 There are a total of 100 users, with each user having the same password. Say we
 want to login as user 32:
 
-```
+```text
 Username: user32
 Password: Userpass1
 Email: user32@hotmail.com
