@@ -10,24 +10,30 @@ Drash codebase containing real world examples (CRUD, auth, advanced patterns, et
 1. x86 chips
 
     ```bash
-    $ sudo docker-compose build && sudo docker-compose up
+      sudo docker-compose build && sudo docker-compose up
+    ```
+
+    If case of `"docker-compose" command not found`, use this command
+
+    ```bash
+      sudo docker compose build && sudo docker compose up
     ```
 
 1. Apple silicon chips (M1, M2)
 
     ```bash
-    $ docker-compose -f docker-compose.m1.yml build && docker-compose -f docker-compose.m1.yml up
+      sudo docker-compose -f docker-compose.m1.yml build && sudo docker-compose -f docker-compose.m1.yml up
     ```
 
 Navigate to [http://localhost:1667](http://localhost:1667)
 
 ## Run with `make` commands
 
-Also, you can run the project with `Makefile` ([Unbuntu](https://www.unixmen.com/install-ubuntu-make-on-ubuntu-15-04/)), ([Windows](https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows)) commands:
+Also, you can run the project with `Makefile` ([Unbuntu](https://www.unixmen.com/install-ubuntu-make-on-ubuntu-15-04/)), ([Windows](https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows), for Mac available by default) commands:
 
 ```bash
-  $ make up
-  $ make up-m1
+  make up
+  make build-m1
 ```
 
 ## Frontend login
