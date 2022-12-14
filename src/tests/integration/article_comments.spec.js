@@ -25,7 +25,7 @@ describe('Article comment', () => {
       expect(res.status)
         .toBe(200);
       expect(body.success)
-        .toBeThruthy();
+        .toBeTruthy();
       expect(body.data[0].body)
         .toBe("Test Body");
       expect(body.data[0].author_username)
