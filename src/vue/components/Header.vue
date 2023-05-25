@@ -72,6 +72,7 @@
         <li class="nav-item" v-if="user.username">
           <router-link
             class="nav-link"
+            data-cy="header-username"
             active-class="active"
             exact
             :to="{
